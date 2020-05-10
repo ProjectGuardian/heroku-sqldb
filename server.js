@@ -10,6 +10,10 @@ app.use(
     bodyParser.urlencoded({extended:false})
 )
 
+app.get('/', (req, res) => {
+    res.send('Welcome to my API!');
+  });
+
 var Users = require("./routes/Users")
 
 app.use("/users", Users)

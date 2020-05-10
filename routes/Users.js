@@ -67,7 +67,7 @@ users.post('/login', (req, res) => {
     })
 })
 users.get('/login', (req,res)=>{
-  res.send('Login' + email);
+  res.send('Login Page');
 })
 users.get('/profile', (req, res) => {
   var decoded = jwt.verify(req.headers['authorization'], process.env.SECRET_KEY)

@@ -38,7 +38,8 @@ users.post('/register', (req, res) => {
             res.send('error: ' + err)
           })
       } else {
-        res.json({ error: 'User already exists' })
+        // res.json({ error: 'User already exists' })
+        res.send('User already exists')
       }
     })
     .catch(err => {

@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize')
 const db = {}
-const sequelize = new Sequelize('	sql12341112', '	sql12341112', 'uXS9qawmBi', {
+const sequelize = new Sequelize('sql12341112', 'sql12341112', 'uXS9qawmBi', {
   host: 'sql12.freemysqlhosting.net',
   dialect: 'mysql',
   operatorsAliases: false,
